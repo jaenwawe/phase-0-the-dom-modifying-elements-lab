@@ -5,6 +5,10 @@ getMain.parentNode.removeChild(document.querySelector('main'));
 
 
 
+document.body.appendChild(element);
+
+
+
 const newHeader =document.createElement('h1');
 newHeader.setAttribute('id', 'victory');
 document.body.appendChild(newHeader);
@@ -16,14 +20,25 @@ newHeader.innerHTML= "JN is the champion";
 element.appendChild(ul); 
 
 
+// const ul = document.createElement('ul');
+
+// for (let i = 0; i < 3; i++) {
+//   const li = document.createElement('li');
+//   li.innerHTML = (i + 1).toString();
+//   ul.appendChild(li);
+// }
+
 
 const ul = document.createElement('ul');
 
 for (let i = 0; i < 3; i++) {
   const li = document.createElement('li');
-  li.innerHTML = (i + 1).toString();
+  li.textContent = (i + 1).toString();
   ul.appendChild(li);
 }
+
+
+
 
 element.appendChild(ul); 
 element.style.backgroundColor = '#27647B'; 
